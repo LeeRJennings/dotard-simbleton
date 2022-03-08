@@ -122,8 +122,11 @@ export const newYorkBizArr = getBusinesses().filter(bizObj => bizObj.addressStat
 // creates a new array by filtering for objects that are manufacturing companies
 export const manufacturingBizArr = getBusinesses().filter(bizObj => bizObj.companyIndustry === 'Manufacturing')
 
-export const agentArr = getBusinesses().map(bizObj => {
-    return bizObj.purchasingAgent
-})
-
-console.log(agentArr)
+// creates a new array by mapping properties of an object into a new object
+export const agentArr = getBusinesses().map(bizObj => (
+    {
+        fullName: `${bizObj.purchasingAgent.nameFirst} ${bizObj.purchasingAgent.nameLast}`,
+        company: bizObj.companyName,
+        phoneNumber: bizObj.phoneWork
+    }
+))

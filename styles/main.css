@@ -1,3 +1,30 @@
+h1, h2, h3 {
+    font-family: 'Fredoka', sans-serif;
+}
+
 h2 {
-    text-decoration: underline;
+    color: #25256f;
+}
+
+header {
+    background-color: #25256f;
+    color: #f7ebd8
+}
+
+main {
+    background-color: #f7ebd8;
+}
+
+/* .businesses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px 20px;
+} */
+
+.business-card, .agent-card {
+    border: 5px solid #25256f;
+    padding: 0 10px;
+    margin: 5px;
+    width: 20%;
 }

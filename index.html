@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dotard & Simbleton</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -13,6 +16,9 @@
     </header>
     
     <main>
+        <input type="text" placeholder="Enter agent here" id="companySearch" />
+        <article class="foundCompanies"></article>
+        
         <h2>Active Businesses</h2>
         <article class="businesses"></article>
         
@@ -22,8 +28,10 @@
         <h2>Manufacturing Companies</h2>
         <article class="businessList--manufacturing"></article>
 
-        <h2>Purchasing Agents</h2>
-        <article class="agents"></article>
+        <aside>
+            <h2>Purchasing Agents</h2>
+            <article class="agents"></article>
+        </aside>
     </main>
     
     <footer></footer>
